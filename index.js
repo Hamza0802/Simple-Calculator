@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-    { message: "Enter first number", type: "number", name: "firstnumber" },
-    { message: "Enter second number", type: "number", name: "secondnumber" },
+    { message: "Enter Your first number", type: "number", name: "firstnumber" },
+    { message: "Enter Your second number", type: "number", name: "secondnumber" },
     {
         message: "Select one of the operators to perform operation",
         type: "list",
@@ -25,3 +25,4 @@ else if (answer.operator === "Division") {
 }
 else if ("Please select a valid operator") {
 }
+console.log("Thank you for using my Calcuator");
